@@ -1,0 +1,9 @@
+# SynthRule runtime dependencies
+#
+# The benchmark core (rule engine, generator, scoring, baselines) is pure
+# standard library -- Python 3.8+ with nothing installed can generate puzzles,
+# run unit tests, and score the oracle/random/identity/align baselines.
+#
+# Only the LLM adapter needs third-party packages.
+
+requests>=2.28          # HTTP client used by synthrule/agents.py (LLMAgent)

@@ -1,0 +1,53 @@
+# SynthRule — default run configuration
+#
+# This mirrors BenchmarkConfig in synthrule/runner.py. The CLI flags in
+# run_benchmark.py override these values; the file is kept as the documented
+# reference for the settings used in the reported run.
+#
+# Reproducing the reported numbers exactly:
+#     python run_benchmark.py --freeze-tasks data/tasks_seed20260931.json --dry-run
+#     python run_benchmark.py --tasks data/tasks_seed20260931.json \
+#         --agents oracle random identity align llm --out results/full.json
+
+seed: 20260931
+
+tasks:
+  n_novel: 10               # procedurally generated universes
+  n_familiar: 4             # contamination-probe universes (latin + textbook rules)
+  difficulties: [1, 2, 3, 4]        # rules per universe, cycled across tasks
+  alphabet_types: [pseudoword, glyph, latin]
+  n_support: 6              # solved examples shown per puzzle
+
+items:                      # how the query pool is split across the four phases
+  a_prior_only: 3
+  b_induction: 6
+  c_feedback: 8
+  d_explicit_rules: 3
+
+generator:
+  # Admission gates. Every generated universe must pass all three, or it is
+  # resampled. See synthrule/generator.py for the rationale of each.
+  require_identifiable: true        # every rule must leave a trace in the support set
+  require_non_positional: true      # a position-wise map must NOT be able to imitate it
+  min_active_fraction: 0.6          # >=60% of items must actually be changed by the rules
+  max_attempts: 2000
+
+agents:
+  baselines: [oracle, random, identity, align]
+  model: llm                # resolved from ANTHROPIC_MODEL at run time
+
+llm:
+  # Reasoning models bill chain-of-thought against max_tokens. Too small a
+  # budget yields stop_reason=max_tokens with no text block at all -- which
+  # looks exactly like a wrong answer. Budget generously.
+  #
+  # Calibration on deepseek-v4-flash: median chain-of-thought is ~7k tokens,
+  # the hardest items exceed 16k. At max_tokens=2048, 65 of 80 responses came
+  # back empty. At 8192, 7 of 80 final items were still cut off.
+  max_tokens: 16384
+  max_token_cap: 32768      # ceiling for the two truncation escalations
+  temperature: 0.0
+  max_retries: 4
+  timeout: 600
+
+concurrency: 8

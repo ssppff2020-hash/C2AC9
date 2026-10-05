@@ -1,0 +1,2310 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "universe": {
+        "uid": "novel-000-d4-pseudoword",
+        "symbols": [
+          "ke",
+          "no",
+          "fa"
+        ],
+        "rules": [
+          {
+            "kind": "delete",
+            "a": "no"
+          },
+          {
+            "kind": "rotate_if_longer",
+            "a": "no",
+            "n": 2
+          },
+          {
+            "kind": "reverse_if",
+            "a": "ke"
+          },
+          {
+            "kind": "reverse",
+            "a": "no"
+          }
+        ],
+        "alphabet_type": "pseudoword",
+        "difficulty": 4,
+        "familiar": false
+      },
+      "support": [
+        {
+          "input": [
+            "fa",
+            "ke",
+            "ke",
+            "fa"
+          ],
+          "output": [
+            "ke",
+            "ke",
+            "fa",
+            "fa"
+          ]
+        },
+        {
+          "input": [
+            "fa",
+            "no",
+            "ke",
+            "ke",
+            "ke"
+          ],
+          "output": [
+            "ke",
+            "ke",
+            "ke",
+            "fa"
+          ]
+        },
+        {
+          "input": [
+            "fa",
+            "ke",
+            "no",
+            "no"
+          ],
+          "output": [
+            "fa",
+            "ke"
+          ]
+        },
+        {
+          "input": [
+            "ke",
+            "fa",
+            "fa",
+            "ke",
+            "no"
+          ],
+          "output": [
+            "fa",
+            "fa",
+            "ke",
+            "ke"
+          ]
+        }
+      ],
+      "query": [
+        {
+          "input": [
+            "fa",
+            "no"
+          ],
+          "output": [
+            "fa"
+          ]
+        },
+        {
+          "input": [
+            "no",
+            "ke",
+            "ke",
+            "no"
+          ],
+          "output": [
+            "ke",
+            "ke"
+          ]
+        },
+        {
+          "input": [
+            "fa",
+            "fa",
+            "no",
+            "fa"
+          ],
+          "output": [
+            "fa",
+            "fa",
+            "fa"
+          ]
+        },
+        {
+          "input": [
+            "no",
+            "ke",
+            "fa",
+            "fa",
+            "no"
+          ],
+          "output": [
+            "fa",
+            "fa",
+            "ke"
+          ]
+        },
+        {
+          "input": [
+            "fa",
+            "no",
+            "ke",
+            "fa",
+            "ke"
+          ],
+          "output": [
+            "ke",
+            "fa",
+            "ke",
+            "fa"
+          ]
+        },
+        {
+          "input": [
+            "ke",
+            "fa",
+            "no",
+            "fa",
+            "no"
+          ],
+          "output": [
+            "fa",
+            "fa",
+            "ke"
+          ]
+        },
+        {
+          "input": [
+            "no",
+            "no"
+          ],
+          "output": []
+        },
+        {
+          "input": [
+            "ke",
+            "no",
+            "ke"
+          ],
+          "output": [
+            "ke",
+            "ke"
+          ]
+        },
+        {
+          "input": [
+            "no",
+            "ke",
+            "ke",
+            "fa",
+            "fa"
+          ],
+          "output": [
+            "ke",
+            "fa",
+            "fa",
+            "ke"
+          ]
+        },
+        {
+          "input": [
+            "ke",
+            "no",
+            "fa",
+            "fa"
+          ],
+          "output": [
+            "fa",
+            "fa",
+            "ke"
+          ]
+        },
+        {
+          "input": [
+            "ke",
+            "ke",
+            "no",
+            "fa"
+          ],
+          "output": [
+            "ke",
+            "fa",
+            "ke"
+          ]
+        },
+        {
+          "input": [
+            "ke",
+            "ke",
+            "fa",
+            "ke",
+            "ke"
+          ],
+          "output": [
+            "ke",
+            "fa",
+            "ke",
+            "ke",
+            "ke"
+          ]
+        },
+        {
+          "input": [
+            "no",
+            "fa",
+            "fa"
+          ],
+          "output": [
+            "fa",
+            "fa"
+          ]
+        },
+        {
+          "input": [
+            "fa",
+            "fa",
+            "fa",
+            "fa",
+            "fa"
+          ],
+          "output": [
+            "fa",
+            "fa",
+            "fa",
+            "fa",
+            "fa"
+          ]
+        }
+      ]
+    },
+    {
+      "universe": {
+        "uid": "novel-001-d5-glyph",
+        "symbols": [
+          "▷",
+          "△",
+          "◀",
+          "○"
+        ],
+        "rules": [
+          {
+            "kind": "duplicate",
+            "a": "◀"
+          },
+          {
+            "kind": "reverse",
+            "a": "△"
+          },
+          {
+            "kind": "rotate_if_longer",
+            "a": "▷",
+            "n": 3
+          },
+          {
+            "kind": "rotate_if_longer",
+            "a": "◀",
+            "n": 2
+          },
+          {
+            "kind": "reverse",
+            "a": "○"
+          }
+        ],
+        "alphabet_type": "glyph",
+        "difficulty": 5,
+        "familiar": false
+      },
+      "support": [
+        {
+          "input": [
+            "○",
+            "○",
+            "△"
+          ],
+          "output": [
+            "△",
+            "○",
+            "○"
+          ]
+        },
+        {
+          "input": [
+            "△",
+            "○",
+            "▷"
+          ],
+          "output": [
+            "▷",
+            "△",
+            "○"
+          ]
+        },
+        {
+          "input": [
+            "▷",
+            "△",
+            "○",
+            "▷"
+          ],
+          "output": [
+            "○",
+            "▷",
+            "▷",
+            "△"
+          ]
+        },
+        {
+          "input": [
+            "◀",
+            "△",
+            "△",
+            "○",
+            "△"
+          ],
+          "output": [
+            "○",
+            "△",
+            "◀",
+            "◀",
+            "△",
+            "△"
+          ]
+        }
+      ],
+      "query": [
+        {
+          "input": [
+            "△",
+            "△",
+            "▷",
+            "◀",
+            "◀"
+          ],
+          "output": [
+            "◀",
+            "◀",
+            "△",
+            "△",
+            "▷",
+            "◀",
+            "◀"
+          ]
+        },
+        {
+          "input": [
+            "◀",
+            "◀",
+            "○"
+          ],
+          "output": [
+            "◀",
+            "○",
+            "◀",
+            "◀",
+            "◀"
+          ]
+        },
+        {
+          "input": [
+            "○",
+            "◀",
+            "▷"
+          ],
+          "output": [
+            "◀",
+            "▷",
+            "○",
+            "◀"
+          ]
+        },
+        {
+          "input": [
+            "△",
+            "◀",
+            "△",
+            "○"
+          ],
+          "output": [
+            "△",
+            "○",
+            "△",
+            "◀",
+            "◀"
+          ]
+        },
+        {
+          "input": [
+            "▷",
+            "◀",
+            "▷"
+          ],
+          "output": [
+            "◀",
+            "▷",
+            "▷",
+            "◀"
+          ]
+        },
+        {
+          "input": [
+            "△",
+            "◀"
+          ],
+          "output": [
+            "◀",
+            "△",
+            "◀"
+          ]
+        },
+        {
+          "input": [
+            "▷",
+            "◀",
+            "○",
+            "○",
+            "◀"
+          ],
+          "output": [
+            "◀",
+            "◀",
+            "▷",
+            "◀",
+            "◀",
+            "○",
+            "○"
+          ]
+        },
+        {
+          "input": [
+            "○",
+            "▷"
+          ],
+          "output": [
+            "○",
+            "▷"
+          ]
+        },
+        {
+          "input": [
+            "◀",
+            "○"
+          ],
+          "output": [
+            "○",
+            "◀",
+            "◀"
+          ]
+        },
+        {
+          "input": [
+            "◀",
+            "△"
+          ],
+          "output": [
+            "△",
+            "◀",
+            "◀"
+          ]
+        },
+        {
+          "input": [
+            "○",
+            "▷",
+            "◀",
+            "▷",
+            "△"
+          ],
+          "output": [
+            "▷",
+            "△",
+            "○",
+            "▷",
+            "◀",
+            "◀"
+          ]
+        },
+        {
+          "input": [
+            "◀",
+            "△",
+            "◀",
+            "○",
+            "▷"
+          ],
+          "output": [
+            "○",
+            "▷",
+            "◀",
+            "◀",
+            "△",
+            "◀",
+            "◀"
+          ]
+        },
+        {
+          "input": [
+            "◀",
+            "○",
+            "▷",
+            "△"
+          ],
+          "output": [
+            "▷",
+            "△",
+            "◀",
+            "◀",
+            "○"
+          ]
+        },
+        {
+          "input": [
+            "▷",
+            "▷",
+            "○"
+          ],
+          "output": [
+            "○",
+            "▷",
+            "▷"
+          ]
+        }
+      ]
+    },
+    {
+      "universe": {
+        "uid": "novel-002-d6-latin",
+        "symbols": [
+          "G",
+          "Z",
+          "X",
+          "A",
+          "F"
+        ],
+        "rules": [
+          {
+            "kind": "rotate_if_longer",
+            "a": "F",
+            "n": 3
+          },
+          {
+            "kind": "reverse_if",
+            "a": "X"
+          },
+          {
+            "kind": "rotate_if_longer",
+            "a": "A",
+            "n": 3
+          },
+          {
+            "kind": "duplicate",
+            "a": "G"
+          },
+          {
+            "kind": "reverse",
+            "a": "X"
+          },
+          {
+            "kind": "reverse_if",
+            "a": "Z"
+          }
+        ],
+        "alphabet_type": "latin",
+        "difficulty": 6,
+        "familiar": false
+      },
+      "support": [
+        {
+          "input": [
+            "X",
+            "X",
+            "A",
+            "Z",
+            "G"
+          ],
+          "output": [
+            "G",
+            "G",
+            "Z",
+            "A",
+            "X",
+            "X"
+          ]
+        },
+        {
+          "input": [
+            "G",
+            "X",
+            "F"
+          ],
+          "output": [
+            "G",
+            "G",
+            "X",
+            "F"
+          ]
+        },
+        {
+          "input": [
+            "X",
+            "A",
+            "G"
+          ],
+          "output": [
+            "X",
+            "A",
+            "G",
+            "G"
+          ]
+        },
+        {
+          "input": [
+            "Z",
+            "Z",
+            "X"
+          ],
+          "output": [
+            "X",
+            "Z",
+            "Z"
+          ]
+        }
+      ],
+      "query": [
+        {
+          "input": [
+            "X",
+            "A",
+            "G",
+            "X"
+          ],
+          "output": [
+            "X",
+            "A",
+            "G",
+            "G",
+            "X"
+          ]
+        },
+        {
+          "input": [
+            "F",
+            "X",
+            "Z"
+          ],
+          "output": [
+            "Z",
+            "X",
+            "F"
+          ]
+        },
+        {
+          "input": [
+            "G",
+            "F",
+            "Z",
+            "Z",
+            "A"
+          ],
+          "output": [
+            "Z",
+            "Z",
+            "A",
+            "G",
+            "G",
+            "F"
+          ]
+        },
+        {
+          "input": [
+            "G",
+            "X",
+            "X",
+            "A"
+          ],
+          "output": [
+            "G",
+            "G",
+            "X",
+            "X",
+            "A"
+          ]
+        },
+        {
+          "input": [
+            "A",
+            "X",
+            "F",
+            "G",
+            "F"
+          ],
+          "output": [
+            "A",
+            "X",
+            "F",
+            "G",
+            "G",
+            "F"
+          ]
+        },
+        {
+          "input": [
+            "F",
+            "G",
+            "F",
+            "G",
+            "Z"
+          ],
+          "output": [
+            "F",
+            "G",
+            "G",
+            "Z",
+            "F",
+            "G",
+            "G"
+          ]
+        },
+        {
+          "input": [
+            "Z",
+            "G",
+            "A",
+            "X",
+            "X"
+          ],
+          "output": [
+            "X",
+            "X",
+            "A",
+            "G",
+            "G",
+            "Z"
+          ]
+        },
+        {
+          "input": [
+            "Z",
+            "F",
+            "Z",
+            "X"
+          ],
+          "output": [
+            "X",
+            "Z",
+            "F",
+            "Z"
+          ]
+        },
+        {
+          "input": [
+            "G",
+            "G",
+            "F"
+          ],
+          "output": [
+            "F",
+            "G",
+            "G",
+            "G",
+            "G"
+          ]
+        },
+        {
+          "input": [
+            "A",
+            "G",
+            "X",
+            "X",
+            "X"
+          ],
+          "output": [
+            "A",
+            "G",
+            "G",
+            "X",
+            "X",
+            "X"
+          ]
+        },
+        {
+          "input": [
+            "X",
+            "A",
+            "F"
+          ],
+          "output": [
+            "X",
+            "A",
+            "F"
+          ]
+        },
+        {
+          "input": [
+            "X",
+            "Z"
+          ],
+          "output": [
+            "Z",
+            "X"
+          ]
+        },
+        {
+          "input": [
+            "X",
+            "Z",
+            "X",
+            "A",
+            "G"
+          ],
+          "output": [
+            "G",
+            "G",
+            "A",
+            "X",
+            "Z",
+            "X"
+          ]
+        },
+        {
+          "input": [
+            "A",
+            "F"
+          ],
+          "output": [
+            "F",
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "universe": {
+        "uid": "novel-003-d4-pseudoword",
+        "symbols": [
+          "si",
+          "ri",
+          "du",
+          "fe"
+        ],
+        "rules": [
+          {
+            "kind": "reverse",
+            "a": "ri"
+          },
+          {
+            "kind": "reverse_if",
+            "a": "fe"
+          },
+          {
+            "kind": "swap",
+            "a": "fe",
+            "b": "ri"
+          },
+          {
+            "kind": "reverse_if",
+            "a": "si"
+          }
+        ],
+        "alphabet_type": "pseudoword",
+        "difficulty": 4,
+        "familiar": false
+      },
+      "support": [
+        {
+          "input": [
+            "si",
+            "ri"
+          ],
+          "output": [
+            "si",
+            "fe"
+          ]
+        },
+        {
+          "input": [
+            "fe",
+            "ri",
+            "fe",
+            "si"
+          ],
+          "output": [
+            "si",
+            "ri",
+            "fe",
+            "ri"
+          ]
+        },
+        {
+          "input": [
+            "du",
+            "fe"
+          ],
+          "output": [
+            "du",
+            "ri"
+          ]
+        },
+        {
+          "input": [
+            "fe",
+            "du",
+            "si",
+            "si"
+          ],
+          "output": [
+            "si",
+            "si",
+            "du",
+            "ri"
+          ]
+        }
+      ],
+      "query": [
+        {
+          "input": [
+            "si",
+            "du",
+            "fe",
+            "fe"
+          ],
+          "output": [
+            "ri",
+            "ri",
+            "du",
+            "si"
+          ]
+        },
+        {
+          "input": [
+            "si",
+            "fe",
+            "ri",
+            "fe",
+            "ri"
+          ],
+          "output": [
+            "fe",
+            "ri",
+            "fe",
+            "ri",
+            "si"
+          ]
+        },
+        {
+          "input": [
+            "fe",
+            "ri",
+            "fe",
+            "ri"
+          ],
+          "output": [
+            "ri",
+            "fe",
+            "ri",
+            "fe"
+          ]
+        },
+        {
+          "input": [
+            "fe",
+            "ri",
+            "fe"
+          ],
+          "output": [
+            "ri",
+            "fe",
+            "ri"
+          ]
+        },
+        {
+          "input": [
+            "du",
+            "ri",
+            "si",
+            "fe"
+          ],
+          "output": [
+            "ri",
+            "si",
+            "fe",
+            "du"
+          ]
+        },
+        {
+          "input": [
+            "si",
+            "si",
+            "ri",
+            "du",
+            "si"
+          ],
+          "output": [
+            "si",
+            "si",
+            "fe",
+            "du",
+            "si"
+          ]
+        },
+        {
+          "input": [
+            "du",
+            "ri"
+          ],
+          "output": [
+            "fe",
+            "du"
+          ]
+        },
+        {
+          "input": [
+            "ri",
+            "fe",
+            "fe",
+            "ri",
+            "si"
+          ],
+          "output": [
+            "si",
+            "fe",
+            "ri",
+            "ri",
+            "fe"
+          ]
+        },
+        {
+          "input": [
+            "du",
+            "fe",
+            "du",
+            "si"
+          ],
+          "output": [
+            "si",
+            "du",
+            "ri",
+            "du"
+          ]
+        },
+        {
+          "input": [
+            "fe",
+            "fe"
+          ],
+          "output": [
+            "ri",
+            "ri"
+          ]
+        },
+        {
+          "input": [
+            "fe",
+            "ri",
+            "ri",
+            "si",
+            "du"
+          ],
+          "output": [
+            "du",
+            "si",
+            "fe",
+            "fe",
+            "ri"
+          ]
+        },
+        {
+          "input": [
+            "si",
+            "fe",
+            "fe",
+            "du"
+          ],
+          "output": [
+            "du",
+            "ri",
+            "ri",
+            "si"
+          ]
+        },
+        {
+          "input": [
+            "fe",
+            "ri",
+            "si",
+            "fe"
+          ],
+          "output": [
+            "ri",
+            "si",
+            "fe",
+            "ri"
+          ]
+        },
+        {
+          "input": [
+            "du",
+            "fe",
+            "ri",
+            "du"
+          ],
+          "output": [
+            "du",
+            "ri",
+            "fe",
+            "du"
+          ]
+        }
+      ]
+    },
+    {
+      "universe": {
+        "uid": "novel-004-d5-glyph",
+        "symbols": [
+          "◆",
+          "▽",
+          "◀",
+          "○",
+          "▷"
+        ],
+        "rules": [
+          {
+            "kind": "reverse",
+            "a": "○"
+          },
+          {
+            "kind": "reverse_if",
+            "a": "◀"
+          },
+          {
+            "kind": "duplicate",
+            "a": "◀"
+          },
+          {
+            "kind": "swap",
+            "a": "◆",
+            "b": "○"
+          },
+          {
+            "kind": "rotate_if_longer",
+            "a": "○",
+            "n": 3
+          }
+        ],
+        "alphabet_type": "glyph",
+        "difficulty": 5,
+        "familiar": false
+      },
+      "support": [
+        {
+          "input": [
+            "▷",
+            "▽",
+            "▷",
+            "○",
+            "◆"
+          ],
+          "output": [
+            "◆",
+            "▷",
+            "▽",
+            "▷",
+            "○"
+          ]
+        },
+        {
+          "input": [
+            "▷",
+            "○"
+          ],
+          "output": [
+            "◆",
+            "▷"
+          ]
+        },
+        {
+          "input": [
+            "▷",
+            "○",
+            "○",
+            "○",
+            "○"
+          ],
+          "output": [
+            "◆",
+            "◆",
+            "◆",
+            "▷",
+            "◆"
+          ]
+        },
+        {
+          "input": [
+            "▽",
+            "◆",
+            "▷"
+          ],
+          "output": [
+            "▷",
+            "○",
+            "▽"
+          ]
+        }
+      ],
+      "query": [
+        {
+          "input": [
+            "○",
+            "◆",
+            "◀",
+            "○"
+          ],
+          "output": [
+            "○",
+            "◀",
+            "◀",
+            "◆",
+            "◆"
+          ]
+        },
+        {
+          "input": [
+            "▷",
+            "▽"
+          ],
+          "output": [
+            "▽",
+            "▷"
+          ]
+        },
+        {
+          "input": [
+            "○",
+            "○"
+          ],
+          "output": [
+            "◆",
+            "◆"
+          ]
+        },
+        {
+          "input": [
+            "◆",
+            "▷",
+            "◆",
+            "▽"
+          ],
+          "output": [
+            "○",
+            "▷",
+            "○",
+            "▽"
+          ]
+        },
+        {
+          "input": [
+            "▷",
+            "○",
+            "▽"
+          ],
+          "output": [
+            "▽",
+            "◆",
+            "▷"
+          ]
+        },
+        {
+          "input": [
+            "◀",
+            "▷",
+            "◀",
+            "◆",
+            "○"
+          ],
+          "output": [
+            "◀",
+            "▷",
+            "◀",
+            "◀",
+            "○",
+            "◆",
+            "◀"
+          ]
+        },
+        {
+          "input": [
+            "◆",
+            "○",
+            "◆"
+          ],
+          "output": [
+            "○",
+            "◆",
+            "○"
+          ]
+        },
+        {
+          "input": [
+            "▷",
+            "▽",
+            "○",
+            "○",
+            "▽"
+          ],
+          "output": [
+            "◆",
+            "◆",
+            "▽",
+            "▷",
+            "▽"
+          ]
+        },
+        {
+          "input": [
+            "▷",
+            "◀",
+            "◀"
+          ],
+          "output": [
+            "◀",
+            "◀",
+            "◀",
+            "◀",
+            "▷"
+          ]
+        },
+        {
+          "input": [
+            "▷",
+            "○",
+            "▷",
+            "▷"
+          ],
+          "output": [
+            "▷",
+            "◆",
+            "▷",
+            "▷"
+          ]
+        },
+        {
+          "input": [
+            "◀",
+            "◀"
+          ],
+          "output": [
+            "◀",
+            "◀",
+            "◀",
+            "◀"
+          ]
+        },
+        {
+          "input": [
+            "○",
+            "◆",
+            "◆",
+            "◆",
+            "○"
+          ],
+          "output": [
+            "○",
+            "○",
+            "○",
+            "◆",
+            "◆"
+          ]
+        },
+        {
+          "input": [
+            "◀",
+            "◆",
+            "▷",
+            "▽"
+          ],
+          "output": [
+            "◀",
+            "○",
+            "▷",
+            "▽",
+            "◀"
+          ]
+        },
+        {
+          "input": [
+            "○",
+            "◀",
+            "◆"
+          ],
+          "output": [
+            "◀",
+            "◀",
+            "○",
+            "◆"
+          ]
+        }
+      ]
+    },
+    {
+      "universe": {
+        "uid": "novel-005-d6-latin",
+        "symbols": [
+          "E",
+          "Q",
+          "B",
+          "U"
+        ],
+        "rules": [
+          {
+            "kind": "reverse",
+            "a": "B"
+          },
+          {
+            "kind": "rotate_if_longer",
+            "a": "E",
+            "n": 2
+          },
+          {
+            "kind": "substitute",
+            "a": "Q",
+            "b": "U"
+          },
+          {
+            "kind": "rotate_if_longer",
+            "a": "E",
+            "n": 3
+          },
+          {
+            "kind": "reverse_if",
+            "a": "E"
+          },
+          {
+            "kind": "rotate_if_longer",
+            "a": "U",
+            "n": 2
+          }
+        ],
+        "alphabet_type": "latin",
+        "difficulty": 6,
+        "familiar": false
+      },
+      "support": [
+        {
+          "input": [
+            "B",
+            "Q",
+            "E"
+          ],
+          "output": [
+            "B",
+            "U",
+            "E"
+          ]
+        },
+        {
+          "input": [
+            "U",
+            "U",
+            "B",
+            "B",
+            "E"
+          ],
+          "output": [
+            "E",
+            "U",
+            "U",
+            "B",
+            "B"
+          ]
+        },
+        {
+          "input": [
+            "U",
+            "Q"
+          ],
+          "output": [
+            "U",
+            "U"
+          ]
+        },
+        {
+          "input": [
+            "E",
+            "U",
+            "Q"
+          ],
+          "output": [
+            "E",
+            "U",
+            "U"
+          ]
+        }
+      ],
+      "query": [
+        {
+          "input": [
+            "Q",
+            "Q",
+            "U",
+            "B"
+          ],
+          "output": [
+            "U",
+            "B",
+            "U",
+            "U"
+          ]
+        },
+        {
+          "input": [
+            "B",
+            "Q",
+            "U",
+            "E",
+            "Q"
+          ],
+          "output": [
+            "U",
+            "B",
+            "U",
+            "U",
+            "E"
+          ]
+        },
+        {
+          "input": [
+            "E",
+            "U",
+            "E",
+            "E",
+            "B"
+          ],
+          "output": [
+            "B",
+            "E",
+            "U",
+            "E",
+            "E"
+          ]
+        },
+        {
+          "input": [
+            "Q",
+            "Q",
+            "E"
+          ],
+          "output": [
+            "U",
+            "U",
+            "E"
+          ]
+        },
+        {
+          "input": [
+            "Q",
+            "Q",
+            "Q",
+            "Q",
+            "Q"
+          ],
+          "output": [
+            "U",
+            "U",
+            "U",
+            "U",
+            "U"
+          ]
+        },
+        {
+          "input": [
+            "E",
+            "E",
+            "B",
+            "U"
+          ],
+          "output": [
+            "U",
+            "E",
+            "E",
+            "B"
+          ]
+        },
+        {
+          "input": [
+            "E",
+            "Q",
+            "Q",
+            "B"
+          ],
+          "output": [
+            "B",
+            "E",
+            "U",
+            "U"
+          ]
+        },
+        {
+          "input": [
+            "Q",
+            "U",
+            "U",
+            "U"
+          ],
+          "output": [
+            "U",
+            "U",
+            "U",
+            "U"
+          ]
+        },
+        {
+          "input": [
+            "Q",
+            "B",
+            "Q"
+          ],
+          "output": [
+            "U",
+            "U",
+            "B"
+          ]
+        },
+        {
+          "input": [
+            "B",
+            "Q",
+            "B",
+            "U",
+            "E"
+          ],
+          "output": [
+            "E",
+            "B",
+            "U",
+            "B",
+            "U"
+          ]
+        },
+        {
+          "input": [
+            "Q",
+            "U"
+          ],
+          "output": [
+            "U",
+            "U"
+          ]
+        },
+        {
+          "input": [
+            "B",
+            "E",
+            "E",
+            "B"
+          ],
+          "output": [
+            "B",
+            "B",
+            "E",
+            "E"
+          ]
+        },
+        {
+          "input": [
+            "Q",
+            "U",
+            "E"
+          ],
+          "output": [
+            "U",
+            "U",
+            "E"
+          ]
+        },
+        {
+          "input": [
+            "B",
+            "U",
+            "Q",
+            "B"
+          ],
+          "output": [
+            "B",
+            "B",
+            "U",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "universe": {
+        "uid": "familiar-000-d4",
+        "symbols": [
+          "G",
+          "Z",
+          "M"
+        ],
+        "rules": [
+          {
+            "kind": "reverse",
+            "a": "Z"
+          },
+          {
+            "kind": "swap",
+            "a": "M",
+            "b": "Z"
+          },
+          {
+            "kind": "substitute",
+            "a": "G",
+            "b": "M"
+          },
+          {
+            "kind": "rotate_if_longer",
+            "a": "G",
+            "n": 2
+          }
+        ],
+        "alphabet_type": "latin",
+        "difficulty": 4,
+        "familiar": true
+      },
+      "support": [
+        {
+          "input": [
+            "M",
+            "G",
+            "Z",
+            "Z",
+            "M"
+          ],
+          "output": [
+            "M",
+            "M",
+            "M",
+            "Z",
+            "Z"
+          ]
+        },
+        {
+          "input": [
+            "M",
+            "M",
+            "Z",
+            "Z"
+          ],
+          "output": [
+            "M",
+            "Z",
+            "Z",
+            "M"
+          ]
+        },
+        {
+          "input": [
+            "M",
+            "M",
+            "M",
+            "M"
+          ],
+          "output": [
+            "Z",
+            "Z",
+            "Z",
+            "Z"
+          ]
+        },
+        {
+          "input": [
+            "Z",
+            "Z"
+          ],
+          "output": [
+            "M",
+            "M"
+          ]
+        }
+      ],
+      "query": [
+        {
+          "input": [
+            "M",
+            "M",
+            "G",
+            "M",
+            "M"
+          ],
+          "output": [
+            "Z",
+            "M",
+            "Z",
+            "Z",
+            "Z"
+          ]
+        },
+        {
+          "input": [
+            "Z",
+            "M",
+            "Z",
+            "G",
+            "M"
+          ],
+          "output": [
+            "M",
+            "M",
+            "Z",
+            "M",
+            "Z"
+          ]
+        },
+        {
+          "input": [
+            "Z",
+            "G",
+            "M",
+            "M"
+          ],
+          "output": [
+            "Z",
+            "M",
+            "M",
+            "Z"
+          ]
+        },
+        {
+          "input": [
+            "G",
+            "Z",
+            "Z",
+            "Z"
+          ],
+          "output": [
+            "M",
+            "M",
+            "M",
+            "M"
+          ]
+        },
+        {
+          "input": [
+            "M",
+            "M",
+            "Z",
+            "G",
+            "Z"
+          ],
+          "output": [
+            "M",
+            "M",
+            "Z",
+            "Z",
+            "M"
+          ]
+        },
+        {
+          "input": [
+            "G",
+            "G"
+          ],
+          "output": [
+            "M",
+            "M"
+          ]
+        },
+        {
+          "input": [
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "output": [
+            "M",
+            "M",
+            "M",
+            "M",
+            "M"
+          ]
+        },
+        {
+          "input": [
+            "M",
+            "Z",
+            "Z",
+            "G",
+            "M"
+          ],
+          "output": [
+            "M",
+            "M",
+            "M",
+            "Z",
+            "Z"
+          ]
+        },
+        {
+          "input": [
+            "M",
+            "M"
+          ],
+          "output": [
+            "Z",
+            "Z"
+          ]
+        },
+        {
+          "input": [
+            "Z",
+            "M",
+            "Z",
+            "Z",
+            "Z"
+          ],
+          "output": [
+            "M",
+            "M",
+            "Z",
+            "M",
+            "M"
+          ]
+        },
+        {
+          "input": [
+            "M",
+            "Z",
+            "M",
+            "Z"
+          ],
+          "output": [
+            "Z",
+            "M",
+            "Z",
+            "M"
+          ]
+        },
+        {
+          "input": [
+            "Z",
+            "M",
+            "M"
+          ],
+          "output": [
+            "Z",
+            "M",
+            "Z"
+          ]
+        },
+        {
+          "input": [
+            "M",
+            "G",
+            "G",
+            "G",
+            "Z"
+          ],
+          "output": [
+            "M",
+            "M",
+            "M",
+            "Z",
+            "M"
+          ]
+        },
+        {
+          "input": [
+            "Z",
+            "G",
+            "G"
+          ],
+          "output": [
+            "M",
+            "M",
+            "M"
+          ]
+        }
+      ]
+    },
+    {
+      "universe": {
+        "uid": "familiar-001-d5",
+        "symbols": [
+          "D",
+          "P",
+          "K",
+          "V"
+        ],
+        "rules": [
+          {
+            "kind": "swap",
+            "a": "D",
+            "b": "V"
+          },
+          {
+            "kind": "reverse",
+            "a": "P"
+          },
+          {
+            "kind": "rotate_if_longer",
+            "a": "D",
+            "n": 2
+          },
+          {
+            "kind": "reverse",
+            "a": "D"
+          },
+          {
+            "kind": "swap",
+            "a": "D",
+            "b": "P"
+          }
+        ],
+        "alphabet_type": "latin",
+        "difficulty": 5,
+        "familiar": true
+      },
+      "support": [
+        {
+          "input": [
+            "P",
+            "D",
+            "K",
+            "V",
+            "K"
+          ],
+          "output": [
+            "K",
+            "D",
+            "V",
+            "K",
+            "P"
+          ]
+        },
+        {
+          "input": [
+            "K",
+            "V"
+          ],
+          "output": [
+            "K",
+            "P"
+          ]
+        },
+        {
+          "input": [
+            "P",
+            "P",
+            "V",
+            "K"
+          ],
+          "output": [
+            "K",
+            "D",
+            "D",
+            "P"
+          ]
+        },
+        {
+          "input": [
+            "P",
+            "D"
+          ],
+          "output": [
+            "D",
+            "V"
+          ]
+        }
+      ],
+      "query": [
+        {
+          "input": [
+            "D",
+            "V",
+            "V",
+            "P"
+          ],
+          "output": [
+            "D",
+            "V",
+            "P",
+            "P"
+          ]
+        },
+        {
+          "input": [
+            "V",
+            "D",
+            "V"
+          ],
+          "output": [
+            "P",
+            "P",
+            "V"
+          ]
+        },
+        {
+          "input": [
+            "D",
+            "D"
+          ],
+          "output": [
+            "V",
+            "V"
+          ]
+        },
+        {
+          "input": [
+            "P",
+            "K",
+            "P"
+          ],
+          "output": [
+            "D",
+            "D",
+            "K"
+          ]
+        },
+        {
+          "input": [
+            "K",
+            "V",
+            "P",
+            "K",
+            "P"
+          ],
+          "output": [
+            "D",
+            "K",
+            "P",
+            "D",
+            "K"
+          ]
+        },
+        {
+          "input": [
+            "V",
+            "V",
+            "K"
+          ],
+          "output": [
+            "K",
+            "P",
+            "P"
+          ]
+        },
+        {
+          "input": [
+            "P",
+            "P",
+            "K",
+            "P"
+          ],
+          "output": [
+            "D",
+            "D",
+            "D",
+            "K"
+          ]
+        },
+        {
+          "input": [
+            "V",
+            "K",
+            "P",
+            "P",
+            "D"
+          ],
+          "output": [
+            "V",
+            "P",
+            "K",
+            "D",
+            "D"
+          ]
+        },
+        {
+          "input": [
+            "V",
+            "P",
+            "P",
+            "P"
+          ],
+          "output": [
+            "D",
+            "P",
+            "D",
+            "D"
+          ]
+        },
+        {
+          "input": [
+            "P",
+            "P",
+            "V",
+            "D",
+            "K"
+          ],
+          "output": [
+            "K",
+            "D",
+            "D",
+            "P",
+            "V"
+          ]
+        },
+        {
+          "input": [
+            "K",
+            "K",
+            "P",
+            "P",
+            "P"
+          ],
+          "output": [
+            "D",
+            "K",
+            "K",
+            "D",
+            "D"
+          ]
+        },
+        {
+          "input": [
+            "K",
+            "V",
+            "V"
+          ],
+          "output": [
+            "P",
+            "K",
+            "P"
+          ]
+        },
+        {
+          "input": [
+            "P",
+            "V",
+            "K",
+            "V",
+            "K"
+          ],
+          "output": [
+            "K",
+            "D",
+            "P",
+            "K",
+            "P"
+          ]
+        },
+        {
+          "input": [
+            "V",
+            "V",
+            "P"
+          ],
+          "output": [
+            "D",
+            "P",
+            "P"
+          ]
+        }
+      ]
+    }
+  ]
+}
